@@ -1,0 +1,28 @@
+# Secrets 
+.env
+.env.*
+*.key
+credentials.json
+config/secrets.*
+
+# Data 
+data/
+*.csv
+*.parquet
+*.feather
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Jupyter outputs 
+# Keeps diffs clean; strip outputs before commit
+*.ipynb_checkpoints
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

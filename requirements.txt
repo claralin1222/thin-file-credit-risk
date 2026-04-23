@@ -1,0 +1,27 @@
+# Core data / modeling
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+
+# Gradient boosting
+lightgbm>=4.0
+
+# WoE encoding
+category_encoders>=2.6
+
+# Explainability
+shap>=0.44
+
+# Fair lending metrics
+fairlearn>=0.10
+
+# Plotting
+matplotlib>=3.7
+seaborn>=0.13
+
+# Notebook environment
+jupyter>=1.0
+ipykernel>=6.25
+
+# Notebook hygiene
+nbstripout>=0.6

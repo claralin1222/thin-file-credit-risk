@@ -1,0 +1,7 @@
+[project]
+name = "thin-file-credit-risk"
+version = "0.1.0"
+requires-python = ">=3.12"
+
+[tool.setuptools.packages.find]
+include = ["src*"]

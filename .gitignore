@@ -22,3 +22,8 @@ venv/
 .DS_Store
 .vscode/
 .idea/
+
+# Build artifacts
+*.egg-info/
+build/
+dist/

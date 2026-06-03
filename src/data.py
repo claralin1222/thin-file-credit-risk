@@ -99,9 +99,8 @@ def load_joined(
     ]
     joined[count_cols] = joined[count_cols].fillna(0)
 
-    # Add a thin-file flag for downstream segmentation
-    # Definition is somewhat arbitrary; we'll revisit in EDA.
-    joined["is_thin_file"] = (joined["bureau_count"] <= 2).astype(int)
+    # Add a thin-file flag (applicants with zero or one prior bureau record, essentially no track record) for downstream segmentation
+    joined["is_thin_file"] = (joined["bureau_count"] <= 1).astype(int)
 
     # Defragment after multiple in-place column modifications
     joined = joined.copy()

@@ -12,9 +12,9 @@ A production-shaped credit risk model built on the [Home Credit Default Risk](ht
 
 Three questions drive the project, each mapped to a decision-maker in a real lending organization:
 
-1. **Where does the approve/decline threshold go?** (Chief Credit Officer) — Cost-sensitive threshold analysis under asymmetric FN vs FP costs.
-2. **Does the model treat protected classes fairly?** (Fair Lending Compliance) — Four-fifths rule, error rate parity, and an ablation study of the demographically-loaded EXT_SOURCE_1 feature.
-3. **How do we explain a decline to the applicant?** (Regulatory / Adverse Action) — SHAP-based principal reasons for denial, translated into plain English.
+1. **Where does the approve/decline threshold go?** (Chief Credit Officer) -- Cost-sensitive threshold analysis under asymmetric FN vs FP costs.
+2. **Does the model treat protected classes fairly?** (Fair Lending Compliance) -- Four-fifths rule, error rate parity, and an ablation study of the demographically-loaded EXT_SOURCE_1 feature.
+3. **How do we explain a decline to the applicant?** (Regulatory / Adverse Action) -- SHAP-based principal reasons for denial, translated into plain English.
 
 ## Why this framing
 
@@ -48,6 +48,8 @@ The framing draws on my summer at the UChicago Crime Lab, where I validated a pr
 - No hyperparameter tuning to chase max AUC. The project optimizes for framing and credit-risk methodology, not last-mile performance.
 
 ## Repo structure
+
+```
 thin-file-credit-risk/
 ├── notebooks/
 │   ├── 01_eda.ipynb                        # Stakeholder-framed exploratory analysis
@@ -64,6 +66,7 @@ thin-file-credit-risk/
 ├── requirements.txt
 ├── requirements-dev.txt                    # Dev tools (nbstripout)
 └── pyproject.toml                          # Editable package install
+```
 
 ## Reproducing
 
@@ -103,4 +106,4 @@ Notebook outputs are stripped by [nbstripout](https://github.com/kynan/nbstripou
 
 ---
 
-*Data source: [Home Credit Default Risk](https://www.kaggle.com/c/home-credit-default-risk), a Kaggle competition from Home Credit Group. This is a portfolio project, not affiliated with or endorsed by Home Credit Group.*
+Data source: [Home Credit Default Risk](https://www.kaggle.com/c/home-credit-default-risk), a Kaggle competition from Home Credit Group. This is a portfolio project, not affiliated with or endorsed by Home Credit Group.
